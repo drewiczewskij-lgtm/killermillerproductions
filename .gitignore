@@ -1,0 +1,22 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+dist-single
+km-productions.html
+
+# The booking server's data file. It holds real customer names, addresses and
+# phone numbers, and it must never end up in version control.
+#
+# The leading slash matters: `data/` with no slash matches a directory of that
+# name at ANY depth, which silently excluded `src/data/` — the entire content
+# layer of the site — from the repository. Anchored to the root, it means only
+# the one directory it was written for.
+/data/
+*.bookings.json

@@ -1,0 +1,44 @@
+{
+  "name": "km-productions",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "KM Productions \u2014 real estate photography, videography, drone and commercial production, with online booking and Stripe payments.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --force",
+    "check:images": "node scripts/check-images.mjs",
+    "server": "node api/server.mjs",
+    "dev:full": "node scripts/dev-full.mjs",
+    "build:static": "node scripts/build-variant.mjs static",
+    "build:single": "node scripts/build-variant.mjs single",
+    "test:booking": "node scripts/test-booking.mjs",
+    "link:work": "node scripts/link-work.mjs",
+    "optimise:work": "node scripts/optimise-work.mjs",
+    "adopt": "node scripts/adopt-work.mjs",
+    "check:work": "node scripts/check-work.mjs",
+    "use:stock": "node scripts/use-stock.mjs",
+    "make:og": "node scripts/make-og.mjs",
+    "make:seo": "node scripts/make-seo.mjs"
+  },
+  "dependencies": {
+    "lenis": "^1.3.26",
+    "motion": "^13.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.20.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "playwright": "^1.63.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.0"
+  }
+}
